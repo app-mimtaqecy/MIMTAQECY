@@ -1,0 +1,39 @@
+{
+  "$schema": "https://firebase.google.com/schemas/firestore/blueprint/v1",
+  "entities": {
+    "User": {
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["userId", "email"]
+    },
+    "PpdbSubmission": {
+      "properties": {
+        "userId": { "type": "string" },
+        "registrationNumber": { "type": "string" },
+        "studentName": { "type": "string" },
+        "nisn": { "type": "string" },
+        "nik": { "type": "string" },
+        "gender": { "type": "string" },
+        "whatsappNumber": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["userId", "studentName", "whatsappNumber", "status"]
+    },
+    "ContactMessage": {
+      "properties": {
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["name", "phone", "message"]
+    }
+  }
+}

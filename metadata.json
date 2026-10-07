@@ -1,0 +1,6 @@
+{
+  "name": "MIM Tanjung Qencono",
+  "description": "Aplikasi Resmi MI Muhammadiyah Tanjung Qencono - Profil, Akademik, Berita, Galeri, PPDB Online dan Administrasi Sekolah",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
